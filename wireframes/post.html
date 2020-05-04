@@ -9,13 +9,31 @@
     </head>
     <body>
         <header>
-            
+            <div class="header-container">
+                <div class="logo">Logo</div>
+                <h1>Draft</h1>
+            </div>
+            <div class="profile-image">Profile</div>
         </header>
-        <nav>
-            
-        </nav>
         <main>
-
+            <form>
+                <div class="form-item">
+                    <label for="title"></label>
+                    <input type="text" name="title" value="Title">
+                </div>
+                <div class="form-item">
+                    <label for="story"></label>
+                    <textarea name="story" id="story" cols="30" rows="10">Tell your story...</textarea>    
+                </div>
+                <div class="form-item">
+                    <label for="file-select">Select an image to upload:</label>
+                    <input type="file">
+                </div>
+                <button>Publish</button>
+            </form>
         </main>
+        <footer>
+            <h2>Footer</h2>
+        </footer>
     </body>
 </html>

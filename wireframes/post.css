@@ -1,0 +1,68 @@
+body {
+    display: inline;
+    margin: 0;
+}
+
+header {
+    text-align: left;
+    background-color: #696868;    
+    padding: 5px 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header-container {
+    display: flex;
+    align-items: center;
+}
+
+h1 {
+    margin: 5px;
+}
+
+.logo {
+    background-color: white;
+    border-radius: 50%;
+    padding: 15px 10px;
+    margin: 5px;
+}
+
+.profile-image {
+    background-color: white;
+    border-radius: 50%;
+    padding: 15px 5px;
+    margin: 5px;
+}
+
+h2 {
+    margin: 0px;
+}
+
+main {
+    background-color: #b1b1b1;
+    padding: 10px;
+    text-align: center;
+}
+
+form {
+    display: inline;
+}
+
+.form-item {
+    margin: 10px;
+}
+
+input[type="text"] {
+    font-size: 3em;
+}
+
+textarea {
+    font-size: 1.2em;
+}
+
+footer {
+    padding: 10px;
+    background-color: #888585;
+    text-align: center;
+}

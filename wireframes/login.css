@@ -33,7 +33,11 @@ main {
 }
 
 form {
+    display: inline;
+}
 
+.form-item {
+    margin: 10px;
 }
 
 footer {
