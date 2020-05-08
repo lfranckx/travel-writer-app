@@ -4,22 +4,22 @@ import { Switch, withRouter } from 'react-router-dom';
 import './App.css';
 
 import Header from '../Header/Header';
-import ArticlePage from '../../Routes/ArticlePage/ArticlePage';
-import AuthorPage from '../../Routes/AuthorPage/AuthorPage';
-import BookmarksPage from '../../Routes/BookmarksPage/BookmarksPage';
-import LoginPage from '../../Routes/LoginPage/LoginPage';
-import MainPage from '../../Routes/MainPage/MainPage';
-import PostArticlePage from '../../Routes/PostArticlePage/PostArticlePage';
-import ProfilePage from '../../Routes/ProfilePage/ProfilePage';
-import ResultsPage from '../../Routes/ResultsPage/ResultsPage';
-import SignUpPage from '../../Routes/SignUpPage/SignUpPage';
+// import ArticlePage from '../../Routes/ArticlePage/ArticlePage';
+// import AuthorPage from '../../Routes/AuthorPage/AuthorPage';
+// import BookmarksPage from '../../Routes/BookmarksPage/BookmarksPage';
+// import LoginPage from '../../Routes/LoginPage/LoginPage';
+// import MainPage from '../../Routes/MainPage/MainPage';
+// import PostArticlePage from '../../Routes/PostArticlePage/PostArticlePage';
+// import ProfilePage from '../../Routes/ProfilePage/ProfilePage';
+// import ResultsPage from '../../Routes/ResultsPage/ResultsPage';
+// import SignUpPage from '../../Routes/SignUpPage/SignUpPage';
 
 import TokenService from '../../Services/token-service';
 import AuthApiService from '../../Services/auth-api-service';
 import IdleService from '../../Services/idle-service';
 
-import PrivateRoute from '../../Utils/PrivateRoute';
-import PublicRoute from '../../Utils/PublicRoute';
+// import PrivateRoute from '../../Utils/PrivateRoute';
+// import PublicRoute from '../../Utils/PublicRoute';
 
 class App extends Component {
   constructor(props) {
@@ -102,7 +102,7 @@ class App extends Component {
         <Header />
         <main>
           {this.state.error && <p className="error">There was an error.</p>}
-          <Switch>
+          {/* <Switch>
             <PublicRoute 
               exact path="/"
               compnent={MainPage}
@@ -139,7 +139,7 @@ class App extends Component {
               path="/profile"
               component={ProfilePage}
             />
-          </Switch>
+          </Switch> */}
         </main>
       </>
     );
