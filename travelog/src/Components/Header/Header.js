@@ -8,7 +8,6 @@ import { Link } from 'react-router-dom';
 export default class Header extends Component {
     handleLogOut = () => {
         TokenService.clearAuthToken();
-        /* when logging out, clear the callbacks to the refresh api and idle auto logout */
         TokenService.clearCallbackBeforeExpiry();
         IdleService.unRegisterIdleResets();
     }
@@ -22,6 +21,9 @@ export default class Header extends Component {
                     </div>
                     <div className="header-container">
                         <label className="hidden">search</label>
+                        <button type="submit" name="search-button" id="search-button">
+                            <i class="fa fa-search"></i>
+                        </button>                        
                         <input type="text" />
                         <Link 
                             onClick={this.handleLogOut}
@@ -35,7 +37,37 @@ export default class Header extends Component {
     }
 
     renderLoginLink() {
-        return (<></>
+        return (
+            <header>
+                <div className="header-container">
+                        <h1>Travelog</h1>
+                    </div>
+                    <div className="header-container">
+                        <label className="hidden">search</label>
+                        <button type="submit" name="search-button" id="search-button">
+                            <i class="fa fa-search"></i>
+                        </button>
+                        <input type="text" />
+                        <Link 
+                            to="/login">
+                            Login
+                        </Link>
+                        <Link 
+                            to="/register">
+                            Sign Up
+                        </Link>
+                    </div>
+            </header>
+        );
+    }
+
+    render() {
+        return (
+            <>
+                {TokenService.hasAuthToken()
+                    ? this.renderLogoutLink()
+                    : this.renderLoginLink()}
+            </>
         );
     }
 }

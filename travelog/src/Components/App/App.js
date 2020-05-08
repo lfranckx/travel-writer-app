@@ -1,5 +1,7 @@
 /*eslint semi: ["error", "always"]*/
 import React, { Component } from 'react';
+import { Switch, withRouter } from 'react-router-dom';
+import { Route } from 'react-router-dom';
 import './App.css';
 
 import Header from '../Header/Header';
@@ -7,7 +9,7 @@ import Header from '../Header/Header';
 // import AuthorPage from '../../Routes/AuthorPage/AuthorPage';
 // import BookmarksPage from '../../Routes/BookmarksPage/BookmarksPage';
 // import LoginPage from '../../Routes/LoginPage/LoginPage';
-// import MainPage from '../../Routes/MainPage/MainPage';
+import MainPage from '../../Routes/MainPage/MainPage';
 // import PostArticlePage from '../../Routes/PostArticlePage/PostArticlePage';
 // import ProfilePage from '../../Routes/ProfilePage/ProfilePage';
 // import ResultsPage from '../../Routes/ResultsPage/ResultsPage';
@@ -68,49 +70,49 @@ class App extends Component {
         <Header />
         <main>
           {this.state.error && <p className="error">There was an error.</p>}
-          {/* <Switch>
-            <PublicRoute 
+          <Switch>
+            <Route 
               exact path="/"
               compnent={MainPage}
             />
-            <PublicRoute 
+            {/* <Route 
               path="/login"
               compnent={LoginPage}
             />
-            <PublicRoute 
+            <Route 
               path="/register"
               component={SignUpPage}
             />
-            <PublicRoute 
+            <Route 
               path="/results"
               compnen={ResultsPage}
             />
-            <PublicRoute 
+            <Route 
               path="/article"
               component={ArticlePage}
             />
-            <PublicRoute 
+            <Route 
               path="/author"
               component={AuthorPage}
             />
-            <PrivateRoute 
+            <Route 
               path="/bookmarks"
               component={BookmarksPage}
             />
-            <PrivateRoute 
+            <Route 
               path="/post"
               component={PostArticlePage}
             />
-            <PrivateRoute
+            <Route
               path="/profile"
               component={ProfilePage}
-            />
-          </Switch> */}
+            /> */}
+          </Switch>
         </main>
       </>
     );
   }
 }
 
-// export default withRouter(App);
-export default App;
+export default withRouter(App);
+// export default App;
