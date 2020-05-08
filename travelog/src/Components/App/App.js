@@ -1,5 +1,5 @@
 /*eslint semi: ["error", "always"]*/
-import React, {Component} from 'react';
+import React, { Component } from 'react';
 import { Switch, withRouter } from 'react-router-dom';
 import './App.css';
 
@@ -18,8 +18,8 @@ import TokenService from '../../Services/token-service';
 import AuthApiService from '../../Services/auth-api-service';
 import IdleService from '../../Services/idle-service';
 
-import PrivateRoute from '../Utils/PrivateRoute';
-import PublicRoute from '../Utils/PublicOnlyRoute';
+import PrivateRoute from '../../Utils/PrivateRoute';
+import PublicRoute from '../../Utils/PublicRoute';
 
 class App extends Component {
   constructor(props) {
