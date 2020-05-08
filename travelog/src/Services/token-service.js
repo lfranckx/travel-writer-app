@@ -1,5 +1,3 @@
-/*eslint semi: ["error", "always"]*/
-
 import config from '../config';
 import jwtDecode from 'jwt-decode';
 

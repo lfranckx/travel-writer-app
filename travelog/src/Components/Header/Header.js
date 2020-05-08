@@ -1,7 +1,6 @@
 /*eslint semi: ["error", "always"]*/
 import React, { Component } from 'react';
 import './Header.css';
-// import { Link } from 'react-router-dom';
 import TokenService from '../../Services/token-service';
 import IdleService from '../../Services/idle-service';
 

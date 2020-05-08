@@ -1,5 +1,3 @@
-/*eslint semi: ["error", "always"]*/
-
 import React, { Component } from 'react';
 
 export default class NotFoundPage extends Component {
