@@ -16,6 +16,26 @@ h1 {
     margin: 5px;
 }
 
+.header-container {
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    background-color: white;
+    border-radius: 50%;
+    padding: 15px 10px;
+    margin: 5px;
+}
+
+.profile-image {
+    background-color: white;
+    border-radius: 50%;
+    padding: 20px 10px;
+    margin: 5px;
+    margin-left: 20px;
+}
+
 nav {
     padding: 5px;
     background-color: grey;

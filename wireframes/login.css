@@ -32,6 +32,18 @@ main {
     text-align: center;
 }
 
+.header-container {
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    background-color: white;
+    border-radius: 50%;
+    padding: 15px 10px;
+    margin: 5px;
+}
+
 form {
     display: inline;
 }
