@@ -1,5 +1,4 @@
 /*eslint semi: ["error", "always"]*/
-
 import React, { Component } from 'react';
 import LoginForm from '../../Components/LoginForm/LoginForm';
 import './LoginPage.css';
@@ -12,7 +11,7 @@ export default class LoginPage extends Component {
         }
     }
 
-    handleLoginSuccess = () => {
+    handleSubmitSuccess = () => {
         const { location, history } = this.props;
         const destination = (location.state || {}).from || '/';
         history.push(destination);
@@ -21,10 +20,10 @@ export default class LoginPage extends Component {
     render() {
         return (
             <>
-                <section>
+                <section className="login-section">
                     <h2>Login</h2>
                     <LoginForm 
-                        onLoginSuccess={this.handleLoginSuccess}
+                        onSubmitSuccess={this.handleSubmitSuccess}
                     />
                 </section>
             </>

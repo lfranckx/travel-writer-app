@@ -13,7 +13,7 @@ import MainPage from '../../Routes/MainPage/MainPage';
 // import PostArticlePage from '../../Routes/PostArticlePage/PostArticlePage';
 // import ProfilePage from '../../Routes/ProfilePage/ProfilePage';
 // import ResultsPage from '../../Routes/ResultsPage/ResultsPage';
-// import SignUpPage from '../../Routes/SignUpPage/SignUpPage';
+import SignUpPage from '../../Routes/SignUpPage/SignUpPage';
 
 import TokenService from '../../Services/token-service';
 import AuthApiService from '../../Services/auth-api-service';
@@ -77,19 +77,19 @@ class App extends Component {
             />
             <Route 
               path="/login"
-              compnent={LoginPage}
+              component={LoginPage}
             />
-            {/* <Route 
+            <Route 
               path="/register"
               component={SignUpPage}
             />
-            <Route 
-              path="/results"
-              compnen={ResultsPage}
-            />
-            <Route 
-              path="/article"
+            {/* <Route 
+              path="/article/:articleId"
               component={ArticlePage}
+            /> */}
+            {/* <Route 
+              path="/results"
+              component={ResultsPage}
             />
             <Route 
               path="/author"

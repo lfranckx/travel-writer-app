@@ -6,11 +6,7 @@ import React, { Component } from 'react';
 import './ArticlesListItem.css';
 
 export default class ArticlesListItem extends Component {
-    componentDidMount() {
-        console.log('ArticleListItem did mount');
-        
-    }
-
+    
     render() {
         const { article } = this.props;
         return (
@@ -20,7 +16,7 @@ export default class ArticlesListItem extends Component {
                 <img className="thumbnail" src={article.image_url} alt="thumbnail" />
                 <h3>{article.title}</h3>
                 <h4>{article.description}</h4>
-                <a href="/">Read more...</a>
+                <a href={`/article/${article.id}`}>Read more...</a>
             </article>
         );
     }

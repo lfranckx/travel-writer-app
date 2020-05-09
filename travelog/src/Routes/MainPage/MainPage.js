@@ -10,7 +10,8 @@ class MainPage extends Component {
 
     componentDidMount() {
         this.context.clearError();
-        this.context.setArticlesList(dummystore);
+        this.context.setArticlesList(dummystore.articles);
+        this.context.setAuthorsList(dummystore.authors);
     }
 
     renderArticles() {
@@ -18,7 +19,7 @@ class MainPage extends Component {
         if (!articlesList) {
             return <div className="loading">Loading...</div>;        
         }
-        console.log('renderArticles() articlesList: ', articlesList);
+
         return articlesList.map(article => 
             <ArticlesListItem 
                 key={article.id}
@@ -30,9 +31,6 @@ class MainPage extends Component {
     render() {
         const { error } = this.context;
         console.log('mainpage context', this.context);
-        if (!this.context.articlesList) {
-            return <div className="loading">Loading...</div>;        
-        }
         return (
             <section>
                 <h2>Stories</h2>

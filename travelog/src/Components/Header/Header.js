@@ -17,7 +17,7 @@ export default class Header extends Component {
             <>
                 <header>
                     <div className="header-container">
-                        <h1>Travelog</h1>
+                        <Link to="/"><h1>Travelog</h1></Link>
                     </div>
                     <div className="header-container">
                         <label className="hidden">search</label>
@@ -40,8 +40,8 @@ export default class Header extends Component {
         return (
             <header>
                 <div className="header-container">
-                        <h1>Travelog</h1>
-                    </div>
+                    <Link to="/"><h1>Travelog</h1></Link>
+                </div>
                     <div className="header-container">
                         <label className="hidden">search</label>
                         <button type="submit" name="search-button" id="search-button">

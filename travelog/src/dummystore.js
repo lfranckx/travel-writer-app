@@ -1,4 +1,5 @@
-export default [
+export default {
+    articles: [
         {
             "id": "1",
             "title": "Sample Article 1",
@@ -53,4 +54,37 @@ export default [
             "date": "3/23/20",
             "image_url": "https://loremflickr.com/750/300/landscape?random=4"          
         },
-]
+    ],
+    authors: [
+        {
+            "id": "1",
+            "name": "Mike Sherman",
+            "profile_image": "https://loremflickr.com/750/300/paris,girl/random=1",
+            "about": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur vestibulum consequat ornare. Sed pharetra ante luctus tellus rhoncus, sit amet vestibulum sem elementum. Maecenas dignissim dui in enim tempus cursus. Maecenas volutpat tempus enim vel hendrerit. Aenean ut viverra turpis. Maecenas condimentum congue lobortis. Mauris sollicitudin dui urna, a suscipit mi condimentum vitae. Fusce pretium mattis mi at scelerisque. Suspendisse id fringilla enim. Ut nec nunc nulla. Duis dapibus arcu neque, vel luctus eros rhoncus nec. Aliquam placerat urna nec purus volutpat, vel facilisis justo dapibus. Proin nisi erat, dignissim ut posuere nec, sodales a nisl. Duis pharetra commodo nulla, id faucibus elit vulputate ac."
+        },
+        {
+            "id": "2",
+            "name": "Deb Straus",
+            "profile_image": "https://loremflickr.com/750/300/paris,girl/random=2",
+            "about": "Suspendisse potenti. Mauris elementum egestas commodo. Mauris iaculis velit scelerisque, fringilla magna quis, mollis enim. Ut ac convallis urna, vel consectetur turpis. Nunc facilisis metus at massa malesuada, elementum venenatis tellus porta. Phasellus a nibh varius, pretium lacus in, fringilla tortor. Curabitur suscipit sapien urna, non ultrices diam ullamcorper in."
+        },
+        {
+            "id": "3",
+            "name": "Deb Straus",
+            "profile_image": "https://loremflickr.com/750/300/paris,girl/random=3",
+            "about": "Etiam id nunc id tortor blandit fermentum at at felis. Ut sed magna vitae ipsum lacinia scelerisque id vel sapien. Suspendisse sed nibh quis nibh hendrerit rhoncus. Mauris a viverra velit, eget maximus odio. Etiam varius ante consectetur diam sollicitudin interdum. Sed volutpat neque vitae quam accumsan, nec auctor libero semper. Aenean sollicitudin tortor ut quam cursus, nec scelerisque est gravida. Proin feugiat, lorem ac vestibulum vehicula, nisi ligula faucibus mauris, vel sagittis lorem dui sit amet tellus. Fusce sed eleifend diam. Proin mollis sed metus a blandit. Suspendisse non molestie dui. Cras volutpat, mauris eu hendrerit pulvinar, orci leo lobortis purus, quis fringilla massa lacus ac libero. Ut iaculis orci et urna tristique, sed consectetur est vulputate. Vestibulum convallis, est in consequat dignissim, magna est laoreet mi, sed auctor risus nisi vel arcu. Quisque id ligula justo."
+        },
+        {
+            "id": "4",
+            "name": "Deb Straus",
+            "profile_image": "https://loremflickr.com/750/300/paris,girl/random=4",
+            "about": "Praesent consectetur luctus luctus. Duis vel enim eu dui facilisis vestibulum ut in ante. Cras ultricies placerat ex. Etiam eget lectus posuere, varius erat ut, auctor velit. Vivamus dignissim dolor ut urna gravida, nec auctor felis ultricies. Sed sem lacus, dignissim non leo et, euismod dictum lectus. Maecenas sodales magna ac scelerisque bibendum. Integer sodales diam metus, vitae congue lorem pharetra non. Praesent id ultrices sapien, sed aliquam nulla."
+        },
+        {
+            "id": "5",
+            "name": "Deb Straus",
+            "profile_image": "https://loremflickr.com/750/300/paris,girl/random=5",
+            "about": "Sed semper neque rutrum, commodo massa egestas, suscipit justo. Aliquam aliquam nec libero in dictum. Sed tincidunt risus vitae lacus auctor commodo. Mauris pretium accumsan metus, in luctus enim sodales vel. Donec ullamcorper felis at nisi consectetur, ac varius neque mollis. Nulla sit amet ipsum et massa venenatis vulputate eget vitae odio. Curabitur posuere pulvinar lacinia. Suspendisse libero nulla, pellentesque ac ornare id, euismod et mi. Vestibulum sollicitudin ipsum sit amet finibus maximus. Sed id finibus risus, nec eleifend lectus. Sed aliquam neque nec risus consectetur mollis. Duis tortor erat, imperdiet sit amet sagittis eu, imperdiet in nulla. In ultricies purus eget eros iaculis, sit amet lacinia magna varius. Mauris ac venenatis lacus, et placerat tortor."
+        },
+    ]
+}

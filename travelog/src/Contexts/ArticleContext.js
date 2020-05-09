@@ -6,28 +6,35 @@ export const nullArticle = {
     tags: [],
 };
 
+export const nullAuthor = {
+    name: ""
+};
+
 const ArticleContext = React.createContext({
-    article: nullArticle,
-    articlesList: [],
     error: null,
+    article: nullArticle,
+    author: nullAuthor,
+    articlesList: [],
+    authorsList: [],
     setError: () => {},
     clearError: () => {},
     setArticle: () => {},
     clearArticle: () => {},
-    setArticlesList: () => {}
+    setAuthor: () => {},
+    clearAuthor: () => {},
+    setArticlesList: () => {},
+    setAuthorsList: () => {}
 });
 export default ArticleContext;
 
 export class ArticleProvider extends Component {
     state = {
+        error: null,
         article: nullArticle,
+        author: nullAuthor,
         articlesList: [],
-        error: null
+        authorsList: []
     };
-
-    setArticlesList = articlesList => {
-        this.setState({ articlesList });
-    }
 
     setError = error => {
         console.error(error);
@@ -45,17 +52,38 @@ export class ArticleProvider extends Component {
     clearArticle = () => {
         this.setArticle(nullArticle);
     }
+
+    setAuthor = author => {
+        this.setState({ author });
+    }
+
+    clearAuthor = () => {
+        this.setAuthor(nullAuthor);
+    }
     
+    setArticlesList = articlesList => {
+        this.setState({ articlesList });
+    }
+
+    setAuthorsList = authorsList => {
+        this.setState({ authorsList });
+    }
+
     render() {
         const value = {
-            article: this.article,
-            articlesList: this.state.articlesList,
             error: this.state.error,
+            article: this.state.article,
+            author: this.state.author,
+            articlesList: this.state.articlesList,
+            authorsList: this.state.authorsList,
             setError: this.setError,
             clearError: this.clearError,
             setArticle: this.setArticle,
             clearArticle: this.clearArticle,
+            setAuthor: this.setAuthor,
+            clearAuthor: this.clearAuthor,
             setArticlesList: this.setArticlesList,
+            setAuthorsList: this.setAuthorsList
         };
         
         return (
