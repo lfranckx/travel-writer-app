@@ -11,6 +11,8 @@ export default class ArticlePage extends Component {
     static contextType = ArticleContext
 
     componentDidMount() {
+        console.log('articlePage did mount');
+        
         const { articleId } = this.props.match.params;
         this.context.clearError();
     }

@@ -1,5 +1,4 @@
-export default {
-    "articles": [
+export default [
         {
             "id": "1",
             "title": "Sample Article 1",
@@ -9,7 +8,7 @@ export default {
             "author": "Mike Sherman",
             "user": "user1",
             "date": "01/23/20",
-            "image_url": "https://loremflickr.com/750/300/landscape?random=1"
+            "image_url": "https://loremflickr.com/750/300/landscape?random=6"
         },
         {
             "id": "2",
@@ -19,7 +18,7 @@ export default {
             Interdum et malesuada fames ac ante ipsum primis in faucibus. Nullam cursus iaculis ante, sit amet condimentum nulla efficitur eu. Sed ac magna lectus. Integer suscipit semper nulla, sed tincidunt sem tincidunt commodo. Phasellus tempus maximus massa eu cursus. Praesent ligula quam, mollis ut scelerisque sit amet, laoreet sed neque. Quisque pellentesque eros posuere nulla pretium, ut aliquet sem imperdiet. Aenean at tortor turpis. Sed dignissim sed purus sed malesuada. Proin vulputate nunc id felis sagittis, nec hendrerit augue consequat.`,
             "author": "Deb Straus",
             "user": "user2",
-            "image_url": "https://loremflickr.com/750/300/landscape?random=2"          
+            "image_url": "https://loremflickr.com/750/300/landscape?random=8"          
         },
         {
             "id": "3",
@@ -30,7 +29,7 @@ export default {
             "author": "Joe Perry",
             "user": "user3",
             "date": "02/14/20",
-            "image_url": "https://loremflickr.com/750/300/landscape?random=2"          
+            "image_url": "https://loremflickr.com/750/300/landscape?random=7"          
         },
         {
             "id": "4",
@@ -41,7 +40,7 @@ export default {
             "author": "Stan Francisco",
             "user": "user4",
             "date": "04/17/20",
-            "image_url": "https://loremflickr.com/750/300/landscape?random=2"          
+            "image_url": "https://loremflickr.com/750/300/landscape?random=3"          
         },
         {
             "id": "5",
@@ -52,7 +51,6 @@ export default {
             "author": "Norm Duck",
             "user": "user5",
             "date": "3/23/20",
-            "image_url": "https://loremflickr.com/750/300/landscape?random=2"          
+            "image_url": "https://loremflickr.com/750/300/landscape?random=4"          
         },
-    ]
-}
+]

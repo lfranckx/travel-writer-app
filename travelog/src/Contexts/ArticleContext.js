@@ -8,25 +8,25 @@ export const nullArticle = {
 
 const ArticleContext = React.createContext({
     article: nullArticle,
-    articleList: [],
+    articlesList: [],
     error: null,
     setError: () => {},
     clearError: () => {},
     setArticle: () => {},
     clearArticle: () => {},
-    setArticleList: () => {}
+    setArticlesList: () => {}
 });
 export default ArticleContext;
 
 export class ArticleProvider extends Component {
     state = {
         article: nullArticle,
-        articleList: [],
+        articlesList: [],
         error: null
     };
 
-    setArticleList = articleList => {
-        this.setState({ articleList });
+    setArticlesList = articlesList => {
+        this.setState({ articlesList });
     }
 
     setError = error => {
@@ -49,13 +49,13 @@ export class ArticleProvider extends Component {
     render() {
         const value = {
             article: this.article,
-            articleList: this.state.articleList,
+            articlesList: this.state.articlesList,
             error: this.state.error,
             setError: this.setError,
             clearError: this.clearError,
             setArticle: this.setArticle,
             clearArticle: this.clearArticle,
-            setArticleList: this.setArticleList,
+            setArticlesList: this.setArticlesList,
         };
         
         return (

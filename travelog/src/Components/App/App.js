@@ -8,7 +8,7 @@ import Header from '../Header/Header';
 // import ArticlePage from '../../Routes/ArticlePage/ArticlePage';
 // import AuthorPage from '../../Routes/AuthorPage/AuthorPage';
 // import BookmarksPage from '../../Routes/BookmarksPage/BookmarksPage';
-// import LoginPage from '../../Routes/LoginPage/LoginPage';
+import LoginPage from '../../Routes/LoginPage/LoginPage';
 import MainPage from '../../Routes/MainPage/MainPage';
 // import PostArticlePage from '../../Routes/PostArticlePage/PostArticlePage';
 // import ProfilePage from '../../Routes/ProfilePage/ProfilePage';
@@ -66,20 +66,20 @@ class App extends Component {
 
   render() {
     return (
-      <div className="App">
+      <>
         <Header />
         <main>
           {this.state.error && <p className="error">There was an error.</p>}
           <Switch>
             <Route 
               exact path={"/"}
-              compnent={MainPage}
+              component={MainPage}
             />
-            {/* <Route 
+            <Route 
               path="/login"
               compnent={LoginPage}
             />
-            <Route 
+            {/* <Route 
               path="/register"
               component={SignUpPage}
             />
@@ -109,7 +109,7 @@ class App extends Component {
             /> */}
           </Switch>
         </main>
-      </div>
+      </>
     );
   }
 }
