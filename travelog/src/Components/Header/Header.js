@@ -45,7 +45,7 @@ export default class Header extends Component {
                     <div className="header-container">
                         <label className="hidden">search</label>
                         <button type="submit" name="search-button" id="search-button">
-                            <i class="fa fa-search"></i>
+                            <i className="fa fa-search"></i>
                         </button>
                         <input type="text" />
                         <Link 

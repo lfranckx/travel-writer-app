@@ -1,5 +1,4 @@
 /*eslint semi: ["error", "always"]*/
-
 import React, { Component } from 'react';
 import ArticleContext from '../../Contexts/ArticleContext'; 
 import './ArticlePage.css';
@@ -17,6 +16,15 @@ export default class ArticlePage extends Component {
     }
 
     componentWillUnmount() {
-        this.
+        this.context.clearArticle();
+    }
+
+    renderArticle() {
+        const { article } = this.context;
+        return (
+            <>
+                
+            </>
+        );
     }
 }

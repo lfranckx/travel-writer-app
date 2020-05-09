@@ -52,11 +52,6 @@ class App extends Component {
     TokenService.clearCallbackBeforeExpiry();
   }
 
-  stringifyArray(array) {
-    let copiedObj = JSON.parse(JSON.stringify(array));
-    return copiedObj;
-  }
-
   logoutFromIdle = () => {
     TokenService.clearAuthToken();
     TokenService.clearCallbackBeforeExpiry();
@@ -64,15 +59,20 @@ class App extends Component {
     this.forceUpdate();
   }
 
+  stringifyArray(array) {
+    let copiedObj = JSON.parse(JSON.stringify(array));
+    return copiedObj;
+  }
+
   render() {
     return (
-      <>
+      <div className="App">
         <Header />
         <main>
           {this.state.error && <p className="error">There was an error.</p>}
           <Switch>
             <Route 
-              exact path="/"
+              exact path={"/"}
               compnent={MainPage}
             />
             {/* <Route 
@@ -109,10 +109,9 @@ class App extends Component {
             /> */}
           </Switch>
         </main>
-      </>
+      </div>
     );
   }
 }
 
 export default withRouter(App);
-// export default App;
