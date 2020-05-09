@@ -1,17 +1,23 @@
 /*eslint semi: ["error", "always"]*/
-
 import React, { Component } from 'react';
 
-const ArticleListContext = React.createContext({
+export const nullArticle = {
+    author: {},
+    tags: [],
+};
+
+const ArticleContext = React.createContext({
     articleList: [],
     error: null,
     setError: () => {},
     clearError: () => {},
+    setArticle: () => {},
+    clearArticle: () => {},
     setArticleList: () => {}
 });
-export default ArticleListContext;
+export default ArticleContext;
 
-export class ArticleListProvider extends Component {
+export class ArticleProvider extends Component {
     state = {
         articleList: [],
         error: null
@@ -19,16 +25,24 @@ export class ArticleListProvider extends Component {
 
     setArticleList = articleList => {
         this.setState({ articleList });
-      }
-    
-      setError = error => {
+    }
+
+    setError = error => {
         console.error(error);
         this.setState({ error });
-      }
-    
-      clearError = () => {
+    }
+
+    clearError = () => {
         this.setState({ error: null });
-      }
+    }
+
+    setArticle = article => {
+        this.setState({ article });
+    }
+
+    clearArticle = article => {
+        this.setArticle(nullArticle);
+    }
     
     render() {
         const value = {
@@ -40,9 +54,9 @@ export class ArticleListProvider extends Component {
         };
         
         return (
-            <ArticleListContext.Provider value={value}>
+            <ArticleContext.Provider value={value}>
                 {this.props.children}
-            </ArticleListContext.Provider>
+            </ArticleContext.Provider>
         );
     }   
 }

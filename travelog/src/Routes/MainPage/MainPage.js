@@ -1,11 +1,11 @@
 /*eslint semi: ["error", "always"]*/
 import React, { Component } from 'react';
 import ArticleListItem from '../ArticleListItem/ArticleListItem';
-import ArticleListContext from '../../Contexts/ArticleListContext/ArticleListContext';
+import ArticleContext from '../../Contexts/ArticleContext/ArticleContext';
 import dummystore from '../../dummystore';
 
 class MainPage extends Component {
-    static contextType = ArticleListContext;
+    static contextType = ArticleContext;
 
     renderArticles() {
         const { articlesList = [] } = dummystore;
